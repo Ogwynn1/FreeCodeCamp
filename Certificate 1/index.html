@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Best Cup of Tea</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Best Cup of Tea</h1>
+    <p id="description">Thank you for providing your opinion on the best cup of tea</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required ></label>
+        <label id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your Email" required </label>
+        <label id="number-label" >Age: (optional) <input id="number" min="16" max="120" placeholder="Age" type="number" </label>
+        <select id="dropdown">
+          <option>(Select one)</option>
+          <option>Black tea</option>
+          <option>Green tea</option>
+          <option>Oolong tea</option>
+          <option>Herbal Tea</option>
+        </select>
+        <label><input type="radio" name="milk" value="with-milk" >With milk</label>
+        <label><input type="radio" name="milk" value="without-milk">Without milk</label>
+        <p>Any extras?</p>
+        <label><input type="checkbox" value="white-sugar"> White Sugar</label>
+        <label><input type="checkbox" value="brown-sugar"> Brown Sugar</label>
+        <label><input type="checkbox" value="sweetener"> Sweetener</label>
+        <label><input type="checkbox" value="stevia"> Stevia</label>
+        <textarea placeholder="Additional comments?"></textarea>
+      </fieldset>  
+      <input type="submit" id="submit">
+    </form>
+  </body
+</html>
