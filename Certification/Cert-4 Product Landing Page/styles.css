@@ -1,0 +1,87 @@
+/*Google Fonts*/
+/*font-family: 'Euphoria Script', cursive;
+font-family: 'Onest', sans-serif;
+font-family: 'Roboto Slab', serif;*/
+
+:root {
+    --text-color1: #ed4e81;
+    --nav-color1: #aceef2;
+    --nav-color2: #fcd8ca;
+    --lblue: lightblue;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--lblue);
+}
+
+#header-img {
+    width: 55px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        var(--nav-color2),
+        var(--nav-color1),
+        var(--nav-color2)
+    );
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color1);
+    padding: 0 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.the-product {
+    font-size: 50px;
+    font-family: 'Euphoria Script', cursive;
+}
+
+#email-section {
+    margin-top: 120px;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 10px;
+}
