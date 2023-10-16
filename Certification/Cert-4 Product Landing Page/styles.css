@@ -18,16 +18,32 @@ body {
     background-color: var(--lblue);
 }
 
+#wrapper {
+    padding-top: 120px;
+}
+
 #header-img {
     width: 55px;
     object-fit: contain;
+    padding-right: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.the-product {
+    font-size: 50px;
+    font-family: 'Euphoria Script', cursive;
 }
 
 #nav-bar {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     top: 0;
     position: fixed;
     width: 100%;
@@ -51,16 +67,10 @@ body {
     padding: 0 10px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 #email-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -69,13 +79,17 @@ h2 {
     padding-bottom: 5px;
 }
 
-.the-product {
-    font-size: 50px;
-    font-family: 'Euphoria Script', cursive;
+.content-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#wrapper {
-    padding-top: 120px;
+#how_its_made {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+ 
 }
 
 footer {
