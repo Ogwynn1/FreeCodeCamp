@@ -6,20 +6,36 @@ font-family: 'Roboto Slab', serif;*/
 :root {
     --text-color1: #ed4e81;
     --nav-color1: #aceef2;
-    --nav-color2: #fcd8ca;
-    --lblue: lightblue;
+    --nav-color2: #d6d6f5;
+    --aqua: #00FFFF;
+    --azure: #F0FFFF;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--lblue);
+    background-color: var(--aqua);
+    display: block;
 }
 
 #wrapper {
-    padding-top: 120px;
+    position: relative;
+    padding-top: 81px;
+    background: linear-gradient(
+        90deg,
+        var(--aqua),
+        var(--azure),
+        var(--aqua)
+    );
 }
 
 #header-img {
@@ -49,9 +65,9 @@ body {
     width: 100%;
     background: linear-gradient(
         90deg,
-        var(--nav-color2),
-        var(--nav-color1),
-        var(--nav-color2)
+        var(--aqua),
+        var(--azure),
+        var(--aqua)
     );
     padding: 10px;
 }
@@ -67,29 +83,108 @@ body {
     padding: 0 10px;
 }
 
-#email-section {
+#email-section h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
 }
 
-h2 {
-    padding-bottom: 5px;
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+#features { 
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .content-layout {
     display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#features .icon {
+    display: flex;
     align-items: center;
     justify-content: center;
+    height: 85px;
+    width: 15vw;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Google symbols */
+.material-symbols-outlined {
+    font-size: 60px !important;
+    color: darkblue;
+}
+
+#features .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85px;
+    width: 60vw;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #how_its_made {
     display: flex;
     align-content: center;
     justify-content: center;
- 
+    width: 100%;
+}
+
+#pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.product {
+    border: 1px solid black;
+    border-radius: -1;
+    margin: 10px;
+    height: 250px;
+    width: 30vw;
+    max-width: 250px;;
+}
+
+.product .animal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffe6b3;
+    height: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+}
+
+.product h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ol li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -111,6 +206,23 @@ footer > ul > li {
     justify-content: space-between;
     align-items: center;
     margin: auto 10px;
+}
+
+@media (max-width: 700px) {
+    #pricing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product {
+        width: 250px;
+    }
+}
+
+@media (max-width: 610px) {
+    #wrapper {
+        padding-top: 102px;
+    }
 }
 
 @media (max-width: 455px) {
