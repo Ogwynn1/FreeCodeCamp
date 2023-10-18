@@ -90,6 +90,10 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+.nav-links a:hover {
+    color: #ffe6b3;
+}
+
 #form {
     display: flex;
     justify-content: center;
@@ -115,6 +119,18 @@ body {
     box-shadow: 4px 2px 2px rebeccapurple;
     border-radius: 20%;
     font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#form button:hover {
+    background-color: #ed4e81;
+}
+
+#form button:active {
+    background-color: #ed4e81;
+    box-shadow: 4px 2px 2px rebeccapurple;
+    transform: translateY(4px);
 }
 
 #email-section h2 {
@@ -248,6 +264,18 @@ p {
     box-shadow: 4px 2px 2px rebeccapurple;
     border-radius: 10% 25%;
     font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.product .button:hover {
+    background-color: #ed4e81;
+}
+
+.button:active {
+    background-color: #ed4e81;
+    box-shadow: 4px 2px 2px rebeccapurple;
+    transform: translateY(4px);
 }
 
 ol li {
