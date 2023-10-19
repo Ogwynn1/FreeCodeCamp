@@ -108,7 +108,7 @@ body {
     padding-bottom: 5px;
 }
 
-#form button {
+#form #submit {
     width: 150px;
     margin-top: 15px;
     padding: 5px;
@@ -123,11 +123,11 @@ body {
     transition-duration: 0.4s;
 }
 
-#form button:hover {
+#form #submit:hover {
     background-color: #ed4e81;
 }
 
-#form button:active {
+#form #submit:active {
     background-color: #ed4e81;
     box-shadow: 4px 2px 2px rebeccapurple;
     transform: translateY(4px);
